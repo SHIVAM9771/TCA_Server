@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: ;
+}
+
+#profitLossChart{
+    width: 100%;
+    margin-left: 7px;
+    height: 110vh;
+}
+/* Container for main content */
+.flex-container {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #007bff;
+    /* margin-bottom: 30px; */
+    /* font-size: 32px; */
+}
+
+/* Label styles*/
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Input fields */
+ input[type="number"] {
+    /* width: calc(100% - 20px); */
+    padding: 9px;
+    font-size: 12px;
+    /* margin-bottom: 3px; */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+    outline: none;
+} 
+
+/* Button Styling */
+button {
+    display: inline-block;
+    width: 100%;
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+/* Results and Trades Section */
+#results, #trades {
+    margin-top: 30px;
+    margin-left: 7px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Chart Container */
+canvas {
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="number"] {
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="number"] {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    canvas {
+        padding: 10px;
+    }
+}
