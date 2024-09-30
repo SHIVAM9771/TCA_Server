@@ -27,7 +27,7 @@ document.getElementById('generateBtn').addEventListener('click', function () {
     const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(data), encryptionKey).toString();
 
     // Request data from the backend
-    fetch('http://localhost:3000/api/generate', {
+    fetch('https://tca-server-3kvr.onrender.com/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ encryptedData }) // Send the encrypted data
